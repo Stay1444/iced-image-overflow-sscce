@@ -5,6 +5,7 @@ use iced::{
 };
 
 fn main() -> iced::Result {
+    tracing_subscriber::fmt::fmt().compact().init();
     iced::application("Iced Image Overflow", update, view)
         .run_with(|| (App::default(), Task::done(Message::LoadImages)))
 }

@@ -5,3 +5,4 @@ edition = "2021"
 
 [dependencies]
 iced =  { git = "https://github.com/iced-rs/iced", features = ["image", "advanced"] }
+tracing-subscriber = "0.3.18"
